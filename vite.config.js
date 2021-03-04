@@ -6,5 +6,8 @@ export default defineConfig({
   plugins: [
     reactRefresh()
   ],
-  base: '/vite-react-resume-poc/'
+  base: '/vite-react-resume-poc/',
+  build: {
+    chunkSizeWarningLimit: 550
+  }
 })
