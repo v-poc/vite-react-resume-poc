@@ -5,6 +5,8 @@
 The simple resume demo based on React (old class coding style) with Vite - (react+vite2).
 
 > This demo is for Vite 2.x and onward.
+>
+> The mobile-first responsive-UI is also fit for desktop web.
 
 ## Project setup
 
