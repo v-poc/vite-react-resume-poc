@@ -5,7 +5,7 @@ class Navbar extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
-            isOpen: true
+            isOpen: window.innerWidth > 480
         }
     }
 
