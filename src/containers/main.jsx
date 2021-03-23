@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
 import SiderBar from '../components/siderbar'
@@ -7,13 +7,8 @@ import Content from '../components/content'
 import Navbar from '../components/navbar'
 import resume from '../utils/resume'
 
-class Main extends React.Component {
-    componentDidMount() {
-        const loading = document.getElementById('loading')
-        loading && (loading.style.display = 'none')
-    }
-
-    renderHTMLtoPDF = () => {
+function Main() {
+    const renderHTMLtoPDF = () => {
         html2canvas(document.body)
             .then((canvas) => {
                 const contentWidth = canvas.width
@@ -51,18 +46,21 @@ class Main extends React.Component {
             .catch(err => console.error(err))
     }
 
-    render () {
-        return (
-            <div className="container-fluid" >
-                <div className="row main clearfix">
-                    <Navbar renderHTMLtoPDF={this.renderHTMLtoPDF} />
-                    <SiderBar {...resume} />
-                    <Content {...resume} />
-                    <Footer />
-                </div>
+    useEffect(() => {
+        const loading = document.getElementById('loading')
+        loading && (loading.style.display = 'none')        
+    }, [])
+
+    return (
+        <div className="container-fluid" >
+            <div className="row main clearfix">
+                <Navbar renderHTMLtoPDF={renderHTMLtoPDF} />
+                <SiderBar {...resume} />
+                <Content {...resume} />
+                <Footer />
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default Main

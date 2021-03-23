@@ -2,11 +2,13 @@
 
 ## INTRODUCTION
 
-The simple resume demo based on React (old class coding style) with Vite - (react+vite2).
+The simple resume demo based on React with Vite - (react+vite2).
 
 > This demo is for Vite 2.x and onward.
 >
 > The mobile-first responsive-UI is also fit for desktop web.
+>
+> The old class coding style is in [early commit](https://github.com/bluepower/vite-react-resume-poc/tree/460780283ca303f253b2d1eded0dfc0c3b2d12e5).
 
 ## Project setup
 
