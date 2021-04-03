@@ -8,6 +8,8 @@ The simple resume demo based on React with Vite - (react+vite2).
 >
 > The mobile-first responsive-UI is also fit for desktop web.
 >
+> Currently JavaScript version only, will provide TypeScript codebase in next major version.
+>
 > The old class coding style is in [early commit](https://github.com/bluepower/vite-react-resume-poc/tree/460780283ca303f253b2d1eded0dfc0c3b2d12e5).
 
 ## Project setup
