@@ -1,6 +1,8 @@
 const SITEURL = 'https://nikoni.top/vite-react-resume-poc'
+const DEFAULT_IMAGE = 'https://nikoni.top/images/others/avatar-man.png'
 
 export default {
+    'picture': DEFAULT_IMAGE,
     'basics': {
         'position': 'Web Frontend Engineer',
         'name': 'Your name',
@@ -8,7 +10,7 @@ export default {
         'age': '25+',
         'worklife': '5+',
         'label': '',
-        'picture': 'https://nikoni.top/images/others/avatar-man.png',
+        'picture': DEFAULT_IMAGE,
         'email': 'Your email',
         'phone': 'Your phone',
         'website': SITEURL,

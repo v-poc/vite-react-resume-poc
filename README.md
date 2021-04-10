@@ -2,7 +2,7 @@
 
 ## INTRODUCTION
 
-The simple resume demo based on React with Vite - (react+vite2).
+The simple resume demo based on React with Vite - (react-hooks+react-router+vite2).
 
 > This demo is for Vite 2.x and onward.
 >

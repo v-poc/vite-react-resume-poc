@@ -2,8 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 
 function SiderBar(props) {
-    const picture = 'https://nikoni.top/images/others/avatar-man.png'
-    const { basics, languages } = props
+    const { basics, languages, picture } = props
 
     return (
         <section className="col-md-3 card-wrapper profile-card-wrapper affix">

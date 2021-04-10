@@ -1,13 +1,23 @@
 import React from 'react'
-import { Router, Route } from 'react-router'
-import { createHashHistory } from 'history'
-import AppMain from '../containers/main'
-import AppNotFound from '../containers/notfound'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from 'react-router-dom'
+
+import AppMain from '../containers/MainIndex'
+import AppNotFound from '../containers/NotFound'
 
 const routes = () => (
-    <Router history={createHashHistory()}>
-        <Route exact path="/" component={AppMain}/>
-        <Route path="*" component={AppNotFound}/>
+    <Router>
+        <Switch>            
+            <Route exact path="/vite-react-resume-poc">
+                <AppMain />
+            </Route>
+            <Route path="*">
+                <AppNotFound />
+            </Route>            
+        </Switch>
     </Router>
 )
 
