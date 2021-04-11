@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 
 import AppMain from '../containers/MainIndex'
-import AppNotFound from '../containers/NotFound'
+import AppNotFound from '../containers/AppNotFound'
 
 const routes = () => (
     <Router>
