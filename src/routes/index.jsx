@@ -1,7 +1,7 @@
 import React from 'react'
 import {
     BrowserRouter as Router,
-    Switch,
+    Routes,
     Route
 } from 'react-router-dom'
 
@@ -10,14 +10,10 @@ import AppNotFound from '../containers/AppNotFound'
 
 const routes = () => (
     <Router>
-        <Switch>            
-            <Route exact path="/vite-react-resume-poc">
-                <AppMain />
-            </Route>
-            <Route path="*">
-                <AppNotFound />
-            </Route>            
-        </Switch>
+        <Routes>            
+            <Route path="/vite-react-resume-poc" element={<AppMain />} />               
+            <Route path="*" element={<AppNotFound />} />        
+        </Routes>
     </Router>
 )
 
