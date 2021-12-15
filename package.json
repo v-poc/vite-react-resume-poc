@@ -1,6 +1,6 @@
 {
   "name": "vite-react-resume-poc",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -9,14 +9,14 @@
   },
   "dependencies": {
     "classnames": "^2.3.1",
-    "html2canvas": "^1.3.2",
+    "html2canvas": "^1.3.3",
     "jspdf": "^2.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^6.0.1"
+    "react-router-dom": "^6.1.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^1.0.7",
-    "vite": "^2.6.13"
+    "@vitejs/plugin-react": "^1.1.3",
+    "vite": "^2.7.2"
   }
 }
