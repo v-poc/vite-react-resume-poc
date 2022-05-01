@@ -21,7 +21,7 @@ function SiderBar(props) {
                 <div className="contact-details clearfix">
                     <div className="detail">
                         <span className="icon"><i className="icon fs-lg icon-profile"></i></span>
-                        <span className="info">{basics.gender}. {basics.age}. {basics.worklife} year work experience.</span>
+                        <span className="info">{basics.gender}. {basics.age}. {basics.worklife} years work experience.</span>
                     </div>
                     <div className="detail">
                         <span className="icon"><i className="icon fs-lg icon-location"></i></span>
