@@ -51,6 +51,7 @@ body {
 
 .labels .label {
     margin-right: 5px;
+    white-space: normal;
 }
 .labels .label:last-child {
     margin-right: 0;
