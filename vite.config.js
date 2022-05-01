@@ -8,7 +8,7 @@ export default defineConfig({
   ],
   base: '/vite-react-resume-poc/',
   build: {
-    chunkSizeWarningLimit: 700
+    chunkSizeWarningLimit: 750
   },
   server: {
     fs: {
